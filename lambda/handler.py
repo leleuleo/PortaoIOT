@@ -44,7 +44,7 @@ def get_estado():
             return {
                 "statusCode": 200,
                 "headers": headers,
-                "body": json.dumps({ "estado": "desconhecido" })
+                "body": json.dumps({ "estado": "desconhecido", "timestamp": None })
             }
 
         ultimo = sorted(items, key=lambda x: x.get("timestamp", ""), reverse=True)[0]
@@ -53,7 +53,10 @@ def get_estado():
         return {
             "statusCode": 200,
             "headers": headers,
-            "body": json.dumps({ "estado": ultimo.get("estado", "desconhecido") })
+            "body": json.dumps({
+                "estado": ultimo.get("estado", "desconhecido"),
+                "timestamp": ultimo.get("timestamp")
+            })
         }
 
     except Exception as e:

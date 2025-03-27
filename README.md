@@ -21,13 +21,14 @@ https://<API_ID>.execute-api.us-east-1.amazonaws.com/prod
 
 #### ✅ GET `/estado`
 
-Retorna o estado mais recente registrado no DynamoDB.
+Retorna o estado mais recente registrado no DynamoDB, incluindo a data/hora do evento.
 
 - **Response**:
 
 ```json
 {
-  "estado": "aberto"
+  "estado": "aberto",
+  "timestamp": "2025-03-25T15:00:00Z"
 }
 ```
 
@@ -73,7 +74,7 @@ Registra um evento de **abertura do portão** e atualiza o estado no DynamoDB.
 
 ---
 
-### 🕵️‍♂️ CORS
+### 🛡️ CORS
 
 Todos os endpoints possuem CORS habilitado para:
 
@@ -207,4 +208,3 @@ source_code_hash = filebase64sha256("../lambda/lambda_function_payload.zip")
 ---
 
 Esse projeto pode ser facilmente replicado ou integrado com recursos como Cognito, CloudWatch e S3 hosting para a interface React.
-
