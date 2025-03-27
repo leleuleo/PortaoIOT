@@ -13,7 +13,7 @@ https://<API_ID>.execute-api.us-east-1.amazonaws.com/prod
 ```
 
 > Exemplo real:  
-> `https://hqz1wzl4c4.execute-api.us-east-1.amazonaws.com/prod`
+> `https://2ux1taym89.execute-api.us-east-1.amazonaws.com/prod`
 
 ---
 
@@ -90,16 +90,16 @@ Access-Control-Allow-Methods: *
 
 ```http
 ### Consultar estado do portão
-GET https://hqz1wzl4c4.execute-api.us-east-1.amazonaws.com/prod/estado
+GET https://2ux1taym89.execute-api.us-east-1.amazonaws.com/prod/estado
 
 ### Acionar fechamento do portão
-POST https://hqz1wzl4c4.execute-api.us-east-1.amazonaws.com/prod/fechar
+POST https://2ux1taym89.execute-api.us-east-1.amazonaws.com/prod/fechar
 Content-Type: application/json
 
 {}
 
 ### Acionar abertura do portão
-POST https://hqz1wzl4c4.execute-api.us-east-1.amazonaws.com/prod/abrir
+POST https://2ux1taym89.execute-api.us-east-1.amazonaws.com/prod/abrir
 Content-Type: application/json
 
 {}
@@ -207,4 +207,25 @@ source_code_hash = filebase64sha256("../lambda/lambda_function_payload.zip")
 
 ---
 
-Esse projeto pode ser facilmente replicado ou integrado com recursos como Cognito, CloudWatch e S3 hosting para a interface React.
+## 📌 Como Deletar Todos os Recursos
+
+Caso queira remover toda a infraestrutura provisionada:
+
+```powershell
+terraform destroy -auto-approve
+```
+
+Isso apagará todos os recursos criados na AWS.
+
+---
+
+## 📌 Contribuições
+
+Se quiser melhorar este projeto, sinta-se à vontade para abrir issues ou fazer pull requests.
+
+---
+
+## 📜 Licença
+
+Este projeto é de código aberto e distribuído sob a licença MIT.
+
