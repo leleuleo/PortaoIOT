@@ -13,7 +13,7 @@ https://<API_ID>.execute-api.us-east-1.amazonaws.com/prod
 ```
 
 > Exemplo real:  
-> `https://2ux1taym89.execute-api.us-east-1.amazonaws.com/prod`
+> `https://hqz1wzl4c4.execute-api.us-east-1.amazonaws.com/prod`
 
 ---
 
@@ -90,16 +90,16 @@ Access-Control-Allow-Methods: *
 
 ```http
 ### Consultar estado do portão
-GET https://2ux1taym89.execute-api.us-east-1.amazonaws.com/prod/estado
+GET https://hqz1wzl4c4.execute-api.us-east-1.amazonaws.com/prod/estado
 
 ### Acionar fechamento do portão
-POST https://2ux1taym89.execute-api.us-east-1.amazonaws.com/prod/fechar
+POST https://hqz1wzl4c4.execute-api.us-east-1.amazonaws.com/prod/fechar
 Content-Type: application/json
 
 {}
 
 ### Acionar abertura do portão
-POST https://2ux1taym89.execute-api.us-east-1.amazonaws.com/prod/abrir
+POST https://hqz1wzl4c4.execute-api.us-east-1.amazonaws.com/prod/abrir
 Content-Type: application/json
 
 {}
