@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "iot:CreateTopicRule",
+          "iot:DeleteTopicRule",
+          "iot:GetTopicRule",
+          "iot:ReplaceTopicRule",
+          "iot:ListTopicRules",
+          "iot:DescribeEndpoint"
+        ],
+        "Resource": "*"
+      }
+    ]
+  }

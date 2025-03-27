@@ -1,0 +1,37 @@
+# ========================
+# Terraform
+# ========================
+infra/.terraform/
+infra/*.tfstate
+infra/*.tfstate.backup
+infra/.terraform.lock.hcl
+
+# ========================
+# Arquivos compilados e logs
+# ========================
+*.log
+*.msi
+
+# ========================
+# Credenciais sensíveis (NUNCA versionar!)
+# ========================
+.aws/
+*.aws/
+aws_credentials.json
+
+# ========================
+# Arquivos temporários / editor
+# ========================
+__pycache__/
+*.swp
+*.bak
+
+# ========================
+# Diagramas / arquivos auxiliares
+# ========================
+*.drawio
+
+# ========================
+# Arquivos de teste e mocks
+# ========================
+response.json

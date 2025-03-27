@@ -1,0 +1,14 @@
+### Teste de Cadastro de Feedback (POST)
+### Acionar Fechamento do Portão
+POST https://2ux1taym89.execute-api.us-east-1.amazonaws.com/prod/fechar
+Content-Type: application/json
+
+
+### Consultar Estado do Portão
+GET https://2ux1taym89.execute-api.us-east-1.amazonaws.com/prod/estado
+
+
+
+### Acionar Abertura do Portão
+POST https://2ux1taym89.execute-api.us-east-1.amazonaws.com/prod/abrir
+Content-Type: application/json
